@@ -43,6 +43,10 @@ b.txt
 ***
 cmd에서는 echo git.md >> .gitignore
 
-#### local repository에 파일 올리기
+### local repository에 파일 올리기
 git add --all
 git add <filename>, git add .
+
+### local repository에 파일 저장
+git commit -am "message"
+
