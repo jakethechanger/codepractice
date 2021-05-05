@@ -49,4 +49,26 @@ git add <filename>, git add .
 
 ### local repository에 파일 저장
 git commit -am "message"
+git commit -m "message"
+
+
+## Make connection (Local Repo <--> Remote Repo)
+git remote add origin <git-remote-url>
+
+```
+remote origin master v remote branch v origin master v branch
+```
+
+### 파일 올리기
+git push -u origin master
+//한번만 하면 됨
+//push Up origin as master (To remote repo)
+
+git push -fu origin master
+//에러, 충돌 무시하고 push
+
+```
+Do the pull first before push
+```
+
 
