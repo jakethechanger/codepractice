@@ -89,3 +89,4 @@ git revert
 history쌓임, 소스 그대로
 
 ### git lens
+This is to use the git control in VS code
