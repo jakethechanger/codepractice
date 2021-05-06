@@ -90,3 +90,23 @@ history쌓임, 소스 그대로
 
 ### git lens
 This is to use the git control in VS code
+
+### Rollback
+git reset 239ff16
+```
+* eef79e1 (HEAD -> master, origin/master, origin/HEAD) Update: git lens:comment
+* 239ff16 Update: git lens
+* 51532d0 Update: 6/5/2021 morning
+* 1c2b9bc Update: test2
+* c587f5d Update: new folder commit
+* 9967703 Update: 3rd commit
+* 9b37dec Create README.md
+* 222563f Update: 2nd commit
+* 66b5c57 Upload: first commit
+```
+
+리셋해도 로컬 디렉토리의 소스는 변화가 없다
+git log에서 히스토리는 없어짐.
+git commit, git push하면 reject. (로컬하고 리모트 소스가 다르기때문에)
+File History에서 차이를 보고 똑같이 맞춰줘야 함.
+
