@@ -92,6 +92,7 @@ history쌓임, 소스 그대로
 This is to use the git control in VS code
 
 ### Rollback
+#### git Reset
 git reset 239ff16
 ```
 * eef79e1 (HEAD -> master, origin/master, origin/HEAD) Update: git lens:comment
@@ -115,3 +116,5 @@ git push origin +master
 
 git push -fu origin master
 //에러, 충돌 무시하고 push와 같은 의미인듯.
+
+#### git revert
