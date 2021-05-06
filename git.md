@@ -87,3 +87,5 @@ hard는 시계(모든것)를 되돌림. 그래서 되돌린 시점 이후에 생
 
 git revert
 history쌓임, 소스 그대로
+
+### git lens
