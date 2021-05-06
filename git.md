@@ -118,3 +118,11 @@ git push -fu origin master
 //에러, 충돌 무시하고 push와 같은 의미인듯.
 
 #### git revert
+git revert cf5f216
+```
+error: could not revert cf5f216... Update: Before adding git revert
+hint: after resolving the conflicts, mark the corrected paths
+hint: with 'git add <paths>' or 'git rm <paths>'
+hint: and commit the result with 'git commit'
+```
+Conflict 발생 - 한개의 파일을 두방향에서 (보통 두사람, 여기서는 2리비젼에서 일어남)
