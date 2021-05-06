@@ -92,7 +92,6 @@ history쌓임, 소스 그대로
 This is to use the git control in VS code
 
 ### Rollback
-#### git Reset
 git reset 239ff16
 ```
 * eef79e1 (HEAD -> master, origin/master, origin/HEAD) Update: git lens:comment
@@ -115,6 +114,7 @@ File History에서 차이를 보고 똑같이 맞춰줘야 함.
 git push origin +master
 
 git push -fu origin master
+<<<<<<< HEAD
 //에러, 충돌 무시하고 push와 같은 의미인듯.
 
 #### git revert
@@ -126,3 +126,6 @@ hint: with 'git add <paths>' or 'git rm <paths>'
 hint: and commit the result with 'git commit'
 ```
 Conflict 발생 - 한개의 파일을 두방향에서 (보통 두사람, 여기서는 2리비젼에서 일어남)
+=======
+//에러, 충돌 무시하고 push와 같은 의미인듯.
+>>>>>>> parent of aa6d1a9... Update: Before adding git revert 2nd
