@@ -113,9 +113,7 @@ File History에서 차이를 보고 똑같이 맞춰줘야 함.
 똑같이 맞추고 git add, git commit, git push해도 reject 됨
 git push origin +master
 
-git push -fu origin master
-<<<<<<< HEAD
-//에러, 충돌 무시하고 push와 같은 의미인듯.
+git push -fu origin master //에러, 충돌 무시하고 push와 같은 의미인듯.
 
 #### git revert
 git revert cf5f216
@@ -126,6 +124,6 @@ hint: with 'git add <paths>' or 'git rm <paths>'
 hint: and commit the result with 'git commit'
 ```
 Conflict 발생 - 한개의 파일을 두방향에서 (보통 두사람, 여기서는 2리비젼에서 일어남)
-=======
-//에러, 충돌 무시하고 push와 같은 의미인듯.
->>>>>>> parent of aa6d1a9... Update: Before adding git revert 2nd
+//revert는 이전으로 돌아가기만 할뿐 그사이의 변경사항을 지우지 않기때문에 conflict 발생  
+
+동일 파일이 여러방향에서 수정되어 서로 다르면 확인후 모든 변경사항을 받아들이거나 어느한쪽을 받아들이지 않으면 된다.
