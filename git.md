@@ -112,3 +112,6 @@ File History에서 차이를 보고 똑같이 맞춰줘야 함.
 
 똑같이 맞추고 git add, git commit, git push해도 reject 됨
 git push origin +master
+
+git push -fu origin master
+//에러, 충돌 무시하고 push와 같은 의미인듯.
