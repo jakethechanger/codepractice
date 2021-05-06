@@ -1,7 +1,7 @@
 # Structure
 Working Directory
 
-// git add
+// git add -> Send to Staging Area
 untracked -> tracked
 
 // git commit
@@ -72,3 +72,18 @@ Do the pull first before push
 ```
 
 
+## Reset (돌아가기) v Merge (충돌시 병합하기)
+
+### 상태 명령어
+git log
+git log --graph --oneline
+git log --oneline
+
+
+### git reset v git revert
+git reset -- [hard | soft | mixed]
+hard는 시계(모든것)를 되돌림. 그래서 되돌린 시점 이후에 생성되었던 변경, 소스가 지워짐.
+*다른 사람의 소스도 지워짐
+
+git revert
+history쌓임, 소스 그대로
