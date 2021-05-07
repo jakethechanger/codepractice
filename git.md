@@ -129,3 +129,43 @@ Conflict 발생 - 한개의 파일을 두방향에서 (보통 두사람, 여기�
 동일 파일이 여러방향에서 수정되어 서로 다르면 확인후 모든 변경사항을 받아들이거나 어느한쪽을 받아들이지 않으면 된다.
 
 만약 양방향에서 수정이 일어났을경우 push에서 reject. git pull을 해서 conflict를 해결 (양방향 수정을 모두 승인하거나 상대방 수정사항을 무시하고 내것만 push할수도 있다.)
+
+
+## Git Branch
+
+git branch #로컬에 있는 브랜치 이름
+git branch -r #서버에 있는 브랜치 이름
+git branch -a #양쪽 브랜치 모두 보기
+#### 브랜치 생성 및 변경전에 반드시 commit
+
+git checkout <branch-name>
+
+git branch <branch-name> #로컬에 브랜치 올리기
+git push origin <branch-name> #서버에 브랜치 올리기
+
+git branch -d <branch-name> #로컬에서 브랜치 삭제
+git push --delete origin <branch-name>  #서버에서 브랜치 삭제
+### Master로 Merge해주기
+Branch에서 작업한 자료 (예를 들어 a.py)를 Master의 a.py에 입력해 주는과정
+
+1. Maset로 Merge하기 (In Working directory)
+git checkout master #master로 변경
+git merge <branch-name>
+
+그래서 br2에서 br1의 코드를 가져오려면
+git checkout br2
+git merge br1
+
+### Diff
+- git diff <branch-name>
+- git diff <branch-name> <file-name>
+- git checkout -p <branch-name> <file-name> #브랜치에 있는 변경사항을 내 브랜치로 패치해서 가져옴
+
+*** git pull은 마스터의 소스만 온다.
+그래서 Remote의 마스터 소스를 Local의 마스터로 받고 다시 브랜치로 patch해서 사용.
+
+만약 서버의 특정 브랜치를 가져오고 싶으면... (t = target, origin(서버를 지칭)/<branch-name>)
+git checkout -t origin/<branch-name>
+
+특정 브랜치를 pull하고 싶다면
+git pull origin <branch-name> v git push origin <branch-name>
