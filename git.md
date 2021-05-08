@@ -171,3 +171,8 @@ git checkout -t origin/<branch-name>
 git pull origin <branch-name> v git push origin <branch-name>
 
 
+#### 회사에서 br1으로 작업후 R의 br1으로 push, 집에서 br1을 받아올때
+git pull하게 되면 안됨. 마스터를 받아오기때문
+git pull origin br1도 안됨. 집에서는 br1의 소유와 존재를 모르기때문
+그래서
+git checkout -t origin/<branch-name>해야 로컬에도 브랜치 생성후 pull
